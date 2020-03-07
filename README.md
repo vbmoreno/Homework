@@ -1,2 +1,2 @@
-# Homework2
+# Homework
 This is for me to submit homework to class due every Sunday night before midnight
