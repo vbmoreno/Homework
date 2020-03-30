@@ -5,45 +5,36 @@ import csv
 pwd
 
 # Import and open path location
-with open{budget_data, 'r', newline=""} as budget_data.csv:
-    csvreader = csv.reader (budget_data.csv, delimeter=',')
-    csv_header = next(budget_data.csv)
+csvpath = "./budget_data.csv"
+csvpath_output = ("./budget_data.txt")
 
-budget_data = os.path.join("desktop", "budget_data.csv")
-csvreader = csv.reader(budget_data.csv)
+with open("./budget_data.csv") as election_data.csv:
+    csvreader = csv.reader(election_data.csv)
+
 
 # List to store data
-total_months=0
-total_profit=0
-average_change=0
-greatest_increase=[]
-greatest_decrease=[]
-P = []
-months = []
+total_votes = 0
+List_candidates = []
+percentage_votes = 0
+votes_candidates = ["",0]
+popular_vote=[]
 
-# Row instructions for printing
-for row in csvreader:
-    P.append(int(row[1]))
-    months.append(row[0])
-        print(row)
-
-# Row formulas
-total_months = len(months)
-total_profit = 
-average_change = sum(profits)/len(profits)
-
-for row in budget_data.csv:
-    if str(greatest_increase) in row:
-        greatest_increase = row[0]
-    if str(greatest_increase) in row:
-        greatest_decrease = row[0]
+for row in election_data.csv:
+    total_votes =  votes + 1
+   List_candidates = row[candidates]
+   percentage_votes = ((candidate/votes)*100) + "%"))
+   popular_vote = 
 
 # Export text file
-  "Financial Analysis\n"
+  "Election Results\n"
     " \n"
     "-----------------------------------------\n"
-f'Total Months:{total_months}\n'
-f'Total Profits: {total_profit}\n'
-f'Average Change: {average_change}\n'
-f'Greatest Increase: {greatest_increase}\n'
-f'Greatest Decrease: {greatest_decrease}\n'
+f'Total Votes: {total_votes}\n'
+ " \n"
+    "-----------------------------------------\n"
+f'List_candidates{List_candidates}\n'
+ " \n"
+    "-----------------------------------------\n"
+f'Winner: {popular_vote}\n'
+" \n"
+    "-----------------------------------------\n"
